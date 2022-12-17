@@ -62,8 +62,8 @@ const SecondSlide = () => {
             ) => (
               <div
                 key={index}
-                className="relative h-[350px] minied-25 bg-cover bg-center bg-no-repeat md:h-[370px]"
-                style={{ backgminiImage: `url(${img})` }}
+                className="relative h-[350px] minied-25 bg-cover bg-center bg-no-repeat md:h-[370px] z-10"
+                style={{ backgminiImage: `url(${img})`, borderRadius: '9999px', zIndex: '10'}}
               >
                 <span
                   className={`absolute top-3 left-5 minied-[50px] px-3 py-1 text-xs capitalize md:text-sm ${

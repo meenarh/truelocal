@@ -17,7 +17,13 @@ const Header = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
             convallis fusce nulla tincidunt sem iaculis. Amet velit etiam nisi.
           </p>
-          
+          <div className="wrapper" style={{ position: "relative" }}>
+            <div className="icon">
+              <FaRegEnvelope />
+            </div>
+            <button>Get Started</button>
+            <input type="email" placeholder="Enter your email address" />
+          </div>
           <div className="md:flex play">
             <div className="play-icon">
               <BiPlay />
@@ -26,20 +32,9 @@ const Header = () => {
           </div>
         </div>
 
-        <main className='right'>
-        <div className="wrapper" style={{ position: "relative" }}>
-            <div className="icon" style={{ position: "absolute" }}>
-              {" "}
-              <FaRegEnvelope />
-            </div>
-            <button style={{ position: "absolute" }}>Get Started</button>
-            <input type="email" placeholder="Enter your email address" />
-          </div>
-          <div className="image">
+        <div className="image">
           <img src={Image1} alt="Lady holding a tap" />
         </div>
-        </main>
-        
       </header>
 
       <section className="md:flex texts flex-row text-dark-grey text-lg gap-7 mt-8 ml-16 pl-6">

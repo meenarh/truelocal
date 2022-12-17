@@ -133,7 +133,7 @@ import { FaStar } from "react-icons/fa";
               </div>
             ))}
           </div>
-          <div className="absolute -bottom-20 z-10 h-56 w-full rounded-br-128 bg-gradient-to-t from-main-bg to-transparent md:bottom-10"></div>
+          <div className="absolute -bottom-20 z-10 h-56 w-full rounded-br-128 bg-gradient-to-t from-main-bg to-transparent md:bottom-10 grid-container-bottom"></div>
         </div>
       </section>
     );
