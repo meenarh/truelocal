@@ -61,25 +61,26 @@ const SecondSlide = () => {
               index
             ) => (
               <div
-                key={index}
-                className="relative h-[350px] minied-25 bg-cover bg-center bg-no-repeat md:h-[370px] z-10"
-                style={{ backgminiImage: `url(${img})`, borderRadius: '9999px', zIndex: '10'}}
+                className="relative h-[350px] minied-25 bg-cover bg-center bg-no-repeat md:h-[370px] md:minied-30"
+                style={{  borderRadius: '20px', borderBottomLeftRadius: '20px', borderBottomRightRadius: '20px' }}
               >
+                <img src={img} alt='mechanic' style={{  borderRadius: '20px'}} />
                 <span
                   className={`absolute top-3 left-5 minied-[50px] px-3 py-1 text-xs capitalize md:text-sm ${
                     open ? "bg-white text-sm" : "bg-primary text-white bg-orange"
-                  }`} style={{borderRadius: '10px'}}
+                  }`} style={{borderRadius: '20px'}}
                 >
                   {open ? "open" : "engaged"}
                 </span>
 
-                <div className="absolute bottom-4 left-1/2 w-11/12 -translate-x-1/2 minied-25 bg-white p-3.5 md:p-5">
+                <div className="absolute bottom-4 left-1/2 w-11/12 -translate-x-1/2 minied-25 bg-white p-3.5 md:p-5" style={{ borderRadius: '20px' }}>
                   <div
-                    style={{ backgminiImage: `url(${img})` }}
+                    style={{ borderRadius: '20px' }}
                     className={`absolute -top-8 right-6 minied-full p-2 md:-top-10 md:right-8 ${
                       index === 0 ? "bg-center" : "bg-right-top"
                     }`}
                   >
+                    
                     <img
                       src={smImg}
                       alt={title}
